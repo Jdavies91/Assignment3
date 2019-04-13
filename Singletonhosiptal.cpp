@@ -42,6 +42,7 @@ void Singletonhosiptal::clearwaitlist() {
 }
 //Pre n/a
 //post view list to see the doctor
+//post view list to see the doctor
 //return void
 void Singletonhosiptal::viewlist() {
     cout<< "Wait list to see Doctor\n";
