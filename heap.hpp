@@ -52,8 +52,9 @@ T heap_pop(){
 
     friend ostream &operator<<(ostream &os, const heap &heap1) {
       for(auto t= heap1.myheap.begin(); t!= heap1.myheap.end(); ++t){
-          os << *t<<endl;
+          os <<"Patient with Severity: "<< *t<<endl;
       }
+      os<<endl;
       return os;
     }
 

@@ -10,7 +10,7 @@
 
 class Singletonhosiptal {
 
-\
+
     public:
         static Singletonhosiptal& get_instance()
         {
