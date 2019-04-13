@@ -12,6 +12,9 @@ class Singletonhosiptal {
 
 
     public:
+    //pre: n/a
+    //Post: sorts the myHeap member.
+    //return: void
         static Singletonhosiptal& get_instance()
         {
 
@@ -19,17 +22,21 @@ class Singletonhosiptal {
             return instance; // Instantiated on first use.
         }
     private:
+    // instializing vector for heap
     vector<int> v1;
+    // instializing new heap object
     heap<int,bool> heap1;
         int value;
+    //default constructor to initalized new heap
     Singletonhosiptal() {
         heap<int,bool> heap1(v1);
     } //private constructor
 
     public:
     Singletonhosiptal(Singletonhosiptal const&)       = delete;
-        void operator=(Singletonhosiptal const&)  = delete;
-    void addPatientCheckout();
+    void operator=(Singletonhosiptal const&)  = delete;
+
+    void PatientCheckout();
     void addnewPatientQue( int severity);
     void sizeofwait();
     void waitlistemtpy();

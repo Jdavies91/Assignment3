@@ -4,7 +4,7 @@
 
 #include "Hosipital.hpp"
 #include "Singletonhosiptal.hpp"
-
+// implements the function for the hospital
 void Hosipital::startDayathosipital() {
     Singletonhosiptal *sh = &Singletonhosiptal::get_instance();
 
@@ -15,7 +15,7 @@ void Hosipital::startDayathosipital() {
     sh->waitlistemtpy();
     sh->sizeofwait();
     sh->viewlist();
-    sh->addPatientCheckout();
+    sh->PatientCheckout();
     cout<<endl;
     sh->sizeofwait();
     sh->viewlist();
